@@ -14,6 +14,9 @@ class App extends Component {
       temperature : "",
       text : "",
       is_day : "",
+      forecast : [
+
+      ]
     }
   }
   componentDidMount = () => {
@@ -28,6 +31,7 @@ class App extends Component {
           text : response2.current.condition.text,
           icon : response2.current.condition.icon,
           is_day : response2.current.is_day,
+          forecast : response2.forecast.forecastday,
         })
       ))
       .catch(err => {
@@ -46,7 +50,7 @@ class App extends Component {
 
 
   render() {
-    const {temperature , text , cityName , is_day} = this.state
+    const {temperature , text , cityName , is_day , forecast} = this.state
     return (
       <div className="App">
         <TopContainer 
@@ -56,7 +60,7 @@ class App extends Component {
           is_day = {is_day}
           handleChange = {this.handleChange}
         />
-        <BottomContainer />
+        <BottomContainer forecast = {forecast} />
       </div>
     );
   }

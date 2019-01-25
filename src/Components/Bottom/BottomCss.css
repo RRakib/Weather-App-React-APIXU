@@ -4,6 +4,21 @@
     grid-gap: 20px;
 }
 .bottomMain .week{
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-rows: 70% 30%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    color: #BCBCBC;
+    font-size: 18px;
+    font-family: "Rockwell";
+    background: rgba( 0,0,0,0.3)
+}
+.bottomMain .week div{
+    width: 100%;
+}
+.bottomMain .week img{
+    width: 70%;
 }

@@ -22,6 +22,13 @@ class Weather extends Component{
 
     render(){
         const {temp_c, text , cityName , is_day , handleChange} = this.props;
+        const day = {
+            background : "#FFB95D"
+        }
+        const night = {
+            background : "#133ea1",
+            color: "#eeeeee"
+        } 
         return(
             <div className="weatherContainer">
                 <p>{cityName}</p>
@@ -30,7 +37,9 @@ class Weather extends Component{
                     <div style={{color : "#E1E1E1" , fontWeight : "bold" , fontSize : 26}}>{temp_c} &#0176;</div>
                 </div>
                 <h3>{text}</h3>
-                <button onClick={this.handleClickPop}>Select Location</button>
+                <button onClick={this.handleClickPop} style={is_day? day : night}>Select Location</button>
+
+                {/* /////////////////////////////////////////////////////////////////////////////PopUp */}
                 <div className="popUp" style={{display : this.state.display}}>
                     <button onClick={this.handleClickClose}>X</button>
                     <select onChange={handleChange}>
