@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "rrakib.github.io/weatherApp",
+  "homepage": "https://rrakib.github.io/weatherApp",
   "dependencies": {
     "gh": "^1.13.9",
     "gh-pages": "^2.0.1",
