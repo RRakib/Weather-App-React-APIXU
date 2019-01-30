@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "rrakib.github.io/weatherApp",
   "dependencies": {
+    "gh": "^1.13.9",
+    "gh-pages": "^2.0.1",
+    "pages": "0.0.16",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "^2.1.3"
