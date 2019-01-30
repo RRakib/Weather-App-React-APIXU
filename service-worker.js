@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "rrakib.github.io/weatherApp/precache-manifest.b615e82e76e70733297ef3f61038d1c4.js"
+  "/weatherApp/precache-manifest.773cacdb731b3281022177fd889563a1.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("rrakib.github.io/weatherApp/index.html", {
+workbox.routing.registerNavigationRoute("/weatherApp/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
